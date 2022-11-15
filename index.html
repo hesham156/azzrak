@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Azzrak</title>
     <link rel="stylesheet" href="./css/index.css"/>
     <link rel="stylesheet" href="./css/normalize.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/fontawesome.min.css" integrity="sha384-z4tVnCr80ZcL0iufVdGQSUzNvJsKjEtqYZjiQrrYKlpGow+btDHDfQWkFjoaz/Zr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body dir="ltr">
-    <nav >
+    <button class="nave-btn"><</button>
+    <nav class="nave">
         <div class="container h-100">
             <div class="nave center flex-column w-100 h-100">
                 <div class="w-100 center">
@@ -31,79 +31,164 @@
             </div>
         </div>
     </nav>
-    <header class="header sec sec-active" id="home">
-        <div class="container center h-100">
-           
-            <div class="w-50 center">
-                <img class="w-100" src="asset/main-3.png" alt="main">
-            </div>
-            <div dir="rtl" class="w-50 center flex-column align-items-start">
-                <h1>أزرق .. المنصة الأكبر في إنشاء وإدارة المتاجر الالكترونية في الوطن العربي</h1>
-                <p>نجاح تجارتك الالكترونية اصبح امر عادي بالنسبة لأي شركة لكن كونك ناجح لم يعد كافيا .. أزرق لا تتكلم عن جعلك جيد او ناجح أزرق تحدثك عن انطلاقك نحو السماء</p>
-                <a href="#" class="btn center">أحصل علي إستشارة مجانية</a>
+    <header data-aos="fade-up" class="header sec sec-active " id="home">
+        <div class="container center h-100 flex-column">
+            <div class="center w-100">
+                    <div class="w-50 center">
+                        <img class="w-100" src="asset/main-3.png" alt="main">
+                    </div>
+                    <div dir="rtl" class="w-50 center flex-column align-items-start">
+                        <h1>أزرق .. المنصة الأكبر في إنشاء وإدارة المتاجر الالكترونية في الوطن العربي</h1>
+                        <p>نجاح تجارتك الالكترونية اصبح امر عادي بالنسبة لأي شركة لكن كونك ناجح لم يعد كافيا .. أزرق لا تتكلم عن جعلك جيد او ناجح أزرق تحدثك عن انطلاقك نحو السماء</p>
+                        <a href="#" class="btn center">أحصل علي إستشارة مجانية</a>
 
-            </div>
+                    </div>
+             </div>
+            <div id="partners" class="w-100 center flex-column">
+                <h1>شركاء النجاح
+      
+                </h1>
+               
+              </div>
+              <div class="partner w-100 center">
+            
+              </div>
 
         </div>
+      
     </header>
    
-    <section id="partners" class="sec center">
-        <div class="container center h-100 w-100 flex-column">
-            <div class="center w-100">
-            <h1>شركاء النجاح
-            </h1>
-        </div>
-        <div class="elms center w-100">
-            <div class="elm center">
-                <a href="" class="w-75">
-                    <img src="./asset/partners/p1.png" class="w-100" alt="">
-                </a>
+    <section id="result" data-aos="fade-up" class="sec center flex-column">
+        <div class="container center h-100 flex-column">
+            <div class="w-100 center flex-column">
+                <h1>بعض نتائج العملاء
+                </h1>
+                <p>نتائج بعض عملاء سيستم أزرق على المنصات المختلفة
+                </p>
             </div>
-            <div class="elm center">
-                <a href="" class="w-75">
-                    <img src="./asset/partners/p2.png" class="w-100" alt="">
-                </a>
+            <div class="result w-100 center">
+               
             </div>
-            <div class="elm center">
-                <a href="" class="w-75">
-                    <img src="./asset/partners/p3.png" class="w-100" alt="">
-                </a>
-            </div>
-            <div class="elm center">
-                <a href="" class="w-75">
-                    <img src="./asset/partners/p4.jpeg" class="w-100" alt="">
-                </a>
-            </div>
-            <div class="elm center">
-                <a href="" class="w-100">
-                    <img src="./asset/partners/p5.png" class="w-75" alt="">
-                </a>
-            </div>
-        </div>
         </div>
     </section>
-    <section id="result" class="sec center flex-column">
-      <div class="w-100 center flex-column">
-        <h1>بعض نتائج العملاء
-        </h1>
-        <p>نتائج بعض عملاء سيستم أزرق على المنصات المختلفة
-        </p>
-      </div>
-      <div class="w-100 center"></div>
+    <section id="steps" data-aos="fade-up" dir="rtl" class="sec center flex-column">
+        <div class="container center h-100 flex-column">
+        <div data-aos="fade-up" class="w-100 center">
+        <h1>انت على بعد خطوات بسيطة من الوصول للقمه</h1>
+        </div>
+        <div data-aos="fade-up" class="w-100 center">
+            <div data-aos="fade-up" class="step center w-100 flex-column">
+                <a href="#" class="w-100 center">
+                    <img  src="./asset/steps/step1.png"/>
+                </a>
+                <h3>تواصل معنا الآن</h3>
+            </div>
+            <div data-aos="fade-up" class="step center w-100 flex-column">
+                <a href="#" class="w-100 center">
+                    <img src="./asset/steps/step2.png"/>
+                </a>
+                <h3>معرفة سيستم أزرق</h3>
+            </div>
+            <div data-aos="fade-up" class="step center w-100 flex-column">
+                <a href="#" class="w-100 center">
+                    <img  src="./asset/steps/step3.png"/>
+                </a>
+                <h3>الموافقة على الخطة</h3>
+            </div>
+            <div data-aos="fade-up" class="step center w-100 flex-column">
+                <a href="#" class="w-100 center">
+                    <img  src="./asset/steps/step4.png"/>
+                </a>
+                <h3>مرحلة جني الأرباح
 
+                </h3>
+            </div>
+        </div>
+        <div data-aos="fade-up" class="w-100 center">
+            <a href="#" class="btn  center">أحصل علي إستشارة مجانية</a>
+        </div>
+    </div>
     </section>
-    <section id="steps" class="sec">
-        <h1>jjhigih</h1>
+    <section id="service" data-aos="fade-up" class="sec">
+        <div class="container center h-100 flex-column">
+        <div data-aos="fade-up" class="w-100 center">
+         <h1>والآن ما هي خدمات أزرق</h1>
+       </div>
+        <div data-aos="fade-up" class="w-100 center flex-column">
+            <div dir="rtl" data-aos="fade-up" class="w-100 center">
+                <div class="w-50 center"> <img class="w-100" src="./asset/serv/ads-1.png"/> </div>
+                <div class="w-50 center flex-column align-items-start">
+                    <h1>فريق الميديا باينج
+                    </h1>
+                    <p>الفريق المسؤول عن ادارة الحملات الاعلانية المختلفة مع ضمان تحقيق أفضل النتائج بأقل تكلفة
+
+                    </p>
+                    <div data-aos="fade-up" class="w-100 center align-items-start">
+                        <a href="#" class="btn  center">أحصل علي إستشارة مجانية</a>
+                    </div>
+                </div>
+
+            </div>
+            <div dir="ltr" data-aos="fade-up" class="w-100 center">
+                <div class="w-50 center"> <img class="w-100" src="./asset/serv/cro.png"/> </div>
+                <div class="w-50 center flex-column align-items-start">
+                    <h1>فريق التحليل والتتبع
+
+                    </h1>
+                    <p>
+                        يعتبر من أهم فرق سيستم أزرق بالنسبة لك و لمتجرك الالكتروني ومهمته هنا هي فحص صفحات الموقع بنسبة 100% ان صفحات الموقع شيقة وجذابة ومرنة للزائر , بحيث يضمن تجربة جيدة لزوار الموقع
+
+
+                    </p>
+                    <div data-aos="fade-up" class="w-100 center align-items-start">
+                        <a href="#" class="btn  center">أحصل علي إستشارة مجانية</a>
+                    </div>
+                </div>
+
+            </div>
+            <div dir="rtl" data-aos="fade-up" class="w-100 center">
+                <div class="w-50 center"> <img class="w-100" src="./asset/serv/ads-1.png"/> </div>
+                <div class="w-50 center flex-column align-items-start">
+                    <h1>فريق الميديا باينج
+                    </h1>
+                    <p>الفريق المسؤول عن ادارة الحملات الاعلانية المختلفة مع ضمان تحقيق أفضل النتائج بأقل تكلفة
+
+                    </p>
+                    <div data-aos="fade-up" class="w-100 center align-items-start">
+                        <a href="#" class="btn  center">أحصل علي إستشارة مجانية</a>
+                    </div>
+                </div>
+
+            </div>
+            <div dir="ltr" data-aos="fade-up" class="w-100 center">
+                <div class="w-50 center"> <img class="w-100" src="./asset/serv/cro.png"/> </div>
+                <div class="w-50 center flex-column align-items-start">
+                    <h1>فريق التحليل والتتبع
+
+                    </h1>
+                    <p>
+                        يعتبر من أهم فرق سيستم أزرق بالنسبة لك و لمتجرك الالكتروني ومهمته هنا هي فحص صفحات الموقع بنسبة 100% ان صفحات الموقع شيقة وجذابة ومرنة للزائر , بحيث يضمن تجربة جيدة لزوار الموقع
+
+
+                    </p>
+                    <div data-aos="fade-up" class="w-100 center align-items-start">
+                        <a href="#" class="btn  center">أحصل علي إستشارة مجانية</a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+       </div>
     </section>
-    <section id="service" class="sec">
-        <h1>khhih</h1>
-    </section>
-    <section id="client" class="sec">
+    <section id="client" data-aos="fade-up" class="sec">
         <h1>68yhk</h1>
     </section>
-    <section id="team" class="sec"></section>
-
-
+    <section id="team" data-aos="fade-up" class="sec"></section>
+    <script src="https://kit.fontawesome.com/8588c9a79c.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js" integrity="sha512-A7AYk1fGKX6S2SsHywmPkrnzTZHrgiVT7GcQkLGDe2ev0aWb8zejytzS8wjo7PGEXKqJOrjQ4oORtnimIRZBtw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+      </script>
     <script type="text/javascript" src="./js/index.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js" integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
