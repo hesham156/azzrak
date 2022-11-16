@@ -69,23 +69,38 @@
         "img": "./asset/serv/cro.png"
       }
     ],
-    "clients": ["", "", "", "", "", "", "", "", "", ""],
+    "clients": ["./asset/client/1.png", "./asset/client/2.png", "./asset/client/3.png", "./asset/client/4.png", "./asset/client/5.png", "./asset/client/6.png", "./asset/client/7.png", "./asset/client/8.png", "./asset/client/9.png", "./asset/client/10.png"],
     "teams": [
-      {
-        "img": "",
-        "name": "",
-        "position": ""
-      },
-      {
-        "img": "",
-        "name": "",
-        "position": ""
-      },
-      {
-        "img": "",
-        "name": "",
-        "position": ""
-      }
+      
+         "./asset/team/1.png",
+         "./asset/team/2.png",
+         "./asset/team/3.png",
+         "./asset/team/4.png",
+         "./asset/team/5.png",
+         "./asset/team/6.png",
+         "./asset/team/7.png",
+         "./asset/team/8.png",
+         "./asset/team/9.png",
+         "./asset/team/10.png",
+         "./asset/team/11.png",
+         "./asset/team/12.png",
+         "./asset/team/13.png",
+         "./asset/team/14.png",
+         "./asset/team/15.png",
+         "./asset/team/16.png",
+         "./asset/team/17.png",
+         "./asset/team/18.png",
+         "./asset/team/19.png",
+         "./asset/team/20.png",
+         "./asset/team/21.png",
+         "./asset/team/22.png",
+         "./asset/team/23.png",
+         "./asset/team/24.png",
+         "./asset/team/25.png",
+         "./asset/team/26.png"
+
+
+     
      
     ]
   }

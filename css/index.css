@@ -154,8 +154,90 @@ nav {
   margin: 20px;
   position: absolute;
 }
+
+#partners .elm {
+  width: calc(100% / 5);
+}
+
+#partners div {
+  margin: 10px 0;
+}
+#partners .elm a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.elm img,
+.res img {
+  filter: grayscale(100%);
+  transition: all 0.3s ease-in-out;
+  width: 70% !important;
+}
+.elm a:hover img,
+.res a:hover img {
+  filter: grayscale(0%);
+}
+.step {
+  flex-direction: column !important;
+}
+.step a {
+  min-height: 174px;
+  min-width: 138px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+.step img {
+  height: auto;
+  max-width: 100%;
+}
+.serv img {
+  width: 100% !important;
+}
+.scroll-btn {
+  position: fixed;
+  bottom: 30px;
+  background: none;
+  right: 50%;
+  transform: translate(05%, 50%);
+  border: 25px solid;
+  transition: all 0.5s ease-in-out;
+  padding: 0;
+  border-color: var(--primary-color) transparent transparent transparent;
+  animation: up 1s infinite alternate ease-in-out;
+}
+
+.clients {
+  height: 50vh;
+}
+.client img {
+  width: 100%;
+}
+.client {
+  position: absolute;
+  padding: 10px;
+  width: 120px !important;
+  height: 120px !important;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 10px 10px #dedede;
+}
+.team {
+  width: calc(100% / 5) !important;
+}
+.team a img {
+  width: 100%;
+}
 /* media */
 @media only screen and (max-width: 1300px) {
+  .client {
+    position: unset !important;
+  }
+  .clients {
+    flex-wrap: wrap !important;
+    height: 85vh !important;
+  }
   nav {
     min-width: 0px;
     overflow: hidden;
@@ -206,6 +288,9 @@ nav {
   .sec .container div:nth-child(2) {
     flex-direction: column !important;
   }
+  .team {
+    width: calc(100% / 2) !important;
+  }
 }
 
 @keyframes pattern-anim {
@@ -216,44 +301,11 @@ nav {
     background-position-y: 800px;
   }
 }
-
-#partners .elm {
-  width: calc(100% / 5);
-}
-
-#partners div {
-  margin: 10px 0;
-}
-#partners .elm a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.elm img,
-.res img {
-  filter: grayscale(100%);
-  transition: all 0.3s ease-in-out;
-  width: 70% !important;
-}
-.elm a:hover img,
-.res a:hover img {
-  filter: grayscale(0%);
-}
-.step {
-  flex-direction: column !important;
-}
-.step a {
-  min-height: 174px;
-  min-width: 138px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
-.step img {
-  height: auto;
-  max-width: 100%;
-}
-.serv img {
-  width: 100% !important;
+@keyframes up {
+  0% {
+    bottom: 30px;
+  }
+  100% {
+    bottom: 35px;
+  }
 }

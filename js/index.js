@@ -71,13 +71,25 @@ const create = (imgsrc, clas, text) => {
   let div = document.createElement("div");
   let a = document.createElement("a");
   let img = document.createElement("img");
-  div.classList.add(clas, "center", "w-100");
+  div.classList.add("center", "w-100", clas);
   div.dataset.aos = "fade-up";
   a.classList.add("w-100", "center");
   a.href = "#";
   img.src = imgsrc;
   a.appendChild(img);
   div.append(a, text ? text : "");
+  return div;
+};
+// create button
+const createbtn = () => {
+  let div = document.createElement("div");
+  let a = document.createElement("a");
+  a.classList.add("btn", "center");
+  a.innerText = "أحصل علي إستشارة مجانية";
+
+  div.classList.add("w-100", "center", "align-items-start");
+  div.dataset.aos = "fade-up";
+  div.appendChild(a);
   return div;
 };
 // partner
@@ -95,18 +107,7 @@ data.steps.map((step) => {
   h3.innerText = step.step;
   steps.append(create(step.img, "step", h3));
 });
-// create button
-const createbtn = () => {
-  let div = document.createElement("div");
-  let a = document.createElement("a");
-  a.classList.add("btn", "center");
-  a.innerText = "أحصل علي إستشارة مجانية";
 
-  div.classList.add("w-100", "center", "align-items-start");
-  div.dataset.aos = "fade-up";
-  div.appendChild(a);
-  return div;
-};
 // serves
 let serves = document.querySelector(".serves");
 data.services.map((serv) => {
@@ -123,4 +124,22 @@ data.services.map((serv) => {
   div2.append(h1, p, createbtn());
   div.append(create(serv.img, "serv"), div2);
   serves.append(div);
+});
+// clients
+let clients = document.querySelector(".clients");
+data.clients.map((client) => {
+  let div = create(client, "client");
+  if (data.clients.indexOf(client) < 5) {
+    console.log((div.style.right = data.clients.indexOf(client) + "0%"));
+    console.log((div.style.top = data.clients.indexOf(client) + "0%"));
+  } else {
+    console.log((div.style.right = data.clients.indexOf(client) + "0%"));
+    console.log((div.style.top = 9 - data.clients.indexOf(client) + "0%"));
+  }
+  clients.append(div);
+});
+// team
+let teams = document.querySelector(".teams");
+data.teams.map((img) => {
+  teams.append(create(img, "team"));
 });
