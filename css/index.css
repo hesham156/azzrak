@@ -1,7 +1,15 @@
+@import url("https://fonts.cdnfonts.com/css/itc-avant-garde-pro-md");
+
 :root {
   --primary-color: #1da1f2;
   --head-color: #0f2460;
 }
+body::-webkit-scrollbar {
+  width: 3px;
+  color: #0f2460;
+  background-color: var(--primary-color);
+}
+
 body {
   background-color: aliceblue;
 }
@@ -19,6 +27,7 @@ body {
 h1 {
   color: var(--head-color);
   text-align: center;
+  font-family: "ITC Avant Garde Pro Md", sans-serif;
 }
 div {
   margin: 10px;
@@ -124,10 +133,10 @@ nav {
   position: fixed;
   color: aliceblue;
   transition: all 0.3s ease-in-out;
-  top: 50%;
+  top: calc(50% - 50px);
   right: 0%;
   font-size: 22px;
-  z-index: 111111111111111111111111111111111111111111111111111111111111;
+  z-index: 11;
   font-weight: bolder;
   border: 0;
   background-color: var(--primary-color);
@@ -230,6 +239,9 @@ nav {
 .res a:hover img {
   filter: grayscale(0%);
 }
+.step {
+  flex-direction: column !important;
+}
 .step a {
   min-height: 174px;
   min-width: 138px;
@@ -241,4 +253,7 @@ nav {
 .step img {
   height: auto;
   max-width: 100%;
+}
+.serv img {
+  width: 100% !important;
 }
