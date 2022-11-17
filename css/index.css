@@ -367,3 +367,6 @@ nav {
 .btn-active {
   border: 5px solid var(--primary-color) !important;
 }
+#service {
+  background-color: #f0f4f5;
+}
