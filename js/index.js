@@ -110,20 +110,25 @@ data.steps.map((step) => {
 
 // serves
 let serves = document.querySelector(".serves");
+let servSection = document.querySelector(".serv-section");
 data.services.map((serv) => {
   let div = document.createElement("div");
+  let button = document.createElement("button");
   let div2 = document.createElement("div");
   let h1 = document.createElement("h1");
   let p = document.createElement("p");
   div.dir = data.services.indexOf(serv) % 2 === 0 ? "rtl" : "ltr";
-  div.classList.add("w-100", "center");
+  div.classList.add("theserve", "w-100", "center");
   div.dataset.aos = "fade-up";
-  div2.classList.add("w-100", "center", "flex-column", "align-items-start");
+  div2.classList.add("w-50", "center", "flex-column", "align-items-start");
   h1.innerText = serv.serv;
   p.innerText = serv.des;
   div2.append(h1, p, createbtn());
   div.append(create(serv.img, "serv"), div2);
   serves.append(div);
+  button.classList.add("btn-c");
+  button.style.backgroundImage = `url(${serv.img})`;
+  servSection.append(button);
 });
 // clients
 let clients = document.querySelector(".clients");
@@ -143,3 +148,29 @@ let teams = document.querySelector(".teams");
 data.teams.map((img) => {
   teams.append(create(img, "team"));
 });
+let theserve = document.querySelectorAll(".theserve");
+let btnC = document.querySelectorAll(".btn-c");
+
+let l = 0;
+theserve[0].classList.add("serv-active");
+btnC[0].classList.add("btn-active");
+
+const loop = (n) => {
+  for (let i = 0; i < theserve.length; i++) {
+    theserve[i]?.classList.remove("serv-active");
+    btnC[i].classList.remove("btn-active");
+  }
+  theserve[n]?.classList.add("serv-active");
+  btnC[n].classList.add("btn-active");
+};
+for (let i = 0; i < btnC.length; i++) {
+  btnC[i].onclick = () => {
+    loop(i);
+    l = i;
+  };
+}
+setInterval(() => {
+  loop(l);
+
+  l === 5 ? (l = 0) : l++;
+}, 5000);

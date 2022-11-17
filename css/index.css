@@ -229,6 +229,35 @@ nav {
 .team a img {
   width: 100%;
 }
+.serves {
+  position: relative;
+  overflow: hidden;
+  height: 60vh !important;
+}
+.serv {
+  width: 50% !important;
+}
+.serves .theserve {
+  position: absolute;
+  overflow: hidden;
+  height: 0;
+  bottom: 0;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  width: 100%;
+  transition: -webkit-transform 0.6s ease;
+  transition: all 0.6s ease;
+  transition: all 0.6s ease, -webkit-transform 0.6s ease;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-perspective: 1000px;
+  perspective: 1000px;
+}
+.serv-active {
+  height: 60vh !important;
+  top: 0;
+}
 /* media */
 @media only screen and (max-width: 1300px) {
   .client {
@@ -282,14 +311,28 @@ nav {
   .header .container div:last-child {
     flex-direction: column !important;
   }
-  .sec .container div:last-child {
-    flex-direction: column !important;
-  }
+
   .sec .container div:nth-child(2) {
     flex-direction: column !important;
   }
   .team {
     width: calc(100% / 2) !important;
+  }
+  .serves {
+    height: auto !important;
+    min-height: 100vh;
+  }
+  .theserve {
+    flex-direction: column !important;
+  }
+  .serv {
+    width: 100% !important;
+  }
+  .theserve div:last-child {
+    width: 100% !important;
+  }
+  .serv-active {
+    height: 100vh !important;
   }
 }
 
@@ -308,4 +351,18 @@ nav {
   100% {
     bottom: 35px;
   }
+}
+.serv-section button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  margin: 5px;
+  box-shadow: 0 0 20px 0px #dedede;
+}
+.btn-active {
+  border: 5px solid var(--primary-color) !important;
 }
