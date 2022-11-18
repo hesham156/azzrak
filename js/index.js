@@ -181,6 +181,8 @@ const cli = () => {
   sbtn.style.top = "0";
   sbtn.style.borderColor = "white transparent transparent transparent";
   footer.style.paddingTop = "50px";
+  window.scrollTo(0, document.body.scrollHeight);
+
   sbtn.onclick = () => {
     notcli();
   };
@@ -190,6 +192,8 @@ const notcli = () => {
   sbtn.style.top = "-50px";
   sbtn.style.borderColor = "transparent transparent #1da1f2 transparent";
   footer.style.paddingTop = "0px";
+  window.scrollTo(0, document.body.scrollHeight);
+
   sbtn.onclick = () => {
     cli();
   };

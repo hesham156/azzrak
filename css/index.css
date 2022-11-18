@@ -299,7 +299,7 @@ footer .container div p {
   }
   .clients {
     flex-wrap: wrap !important;
-    height: 85vh !important;
+    height: auto !important;
   }
   nav {
     min-width: 0px;
@@ -330,6 +330,7 @@ footer .container div p {
   }
   footer .container div {
     width: 100% !important;
+    margin: 0 !important;
   }
 }
 @media only screen and (max-width: 700px) {
