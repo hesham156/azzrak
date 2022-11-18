@@ -174,3 +174,26 @@ setInterval(() => {
 
   l === 5 ? (l = 0) : l++;
 }, 5000);
+let footer = document.getElementById("#footer");
+let sbtn = document.querySelector(".scroll-btn");
+const cli = () => {
+  footer.style.height = "auto";
+  sbtn.style.top = "0";
+  sbtn.style.borderColor = "white transparent transparent transparent";
+  footer.style.paddingTop = "50px";
+  sbtn.onclick = () => {
+    notcli();
+  };
+};
+const notcli = () => {
+  footer.style.height = "0px";
+  sbtn.style.top = "-50px";
+  sbtn.style.borderColor = "transparent transparent #1da1f2 transparent";
+  footer.style.paddingTop = "0px";
+  sbtn.onclick = () => {
+    cli();
+  };
+};
+sbtn.onclick = () => {
+  cli();
+};

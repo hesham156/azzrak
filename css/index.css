@@ -196,16 +196,13 @@ nav {
   width: 100% !important;
 }
 .scroll-btn {
-  position: fixed;
-  bottom: 30px;
+  position: absolute;
+  top: -50px;
   background: none;
-  right: 50%;
-  transform: translate(05%, 50%);
   border: 25px solid;
   transition: all 0.5s ease-in-out;
   padding: 0;
-  border-color: var(--primary-color) transparent transparent transparent;
-  animation: up 1s infinite alternate ease-in-out;
+  border-color: transparent transparent var(--primary-color) transparent;
 }
 
 .clients {
@@ -258,6 +255,43 @@ nav {
   height: 60vh !important;
   top: 0;
 }
+
+.serv-section button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 1px solid black;
+  background-color: transparent;
+  margin: 5px;
+  box-shadow: 0 0 20px 0px #dedede;
+}
+.btn-active {
+  border: 5px solid var(--primary-color) !important;
+}
+#service,
+#team {
+  background-color: #f0f4f5;
+}
+footer {
+  background-color: var(--primary-color);
+  color: white;
+}
+footer .container {
+  padding-top: 0px;
+  height: 0;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  align-items: start;
+}
+footer .container div {
+  width: calc(100% / 3) !important;
+}
+footer .container div p {
+  text-align: center;
+}
 /* media */
 @media only screen and (max-width: 1300px) {
   .client {
@@ -288,6 +322,13 @@ nav {
   }
 
   #result .container .res {
+    width: 100% !important;
+  }
+
+  footer .container {
+    flex-direction: column !important;
+  }
+  footer .container div {
     width: 100% !important;
   }
 }
@@ -351,22 +392,4 @@ nav {
   100% {
     bottom: 35px;
   }
-}
-.serv-section button {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border: 1px solid black;
-  background-color: transparent;
-  margin: 5px;
-  box-shadow: 0 0 20px 0px #dedede;
-}
-.btn-active {
-  border: 5px solid var(--primary-color) !important;
-}
-#service {
-  background-color: #f0f4f5;
 }
